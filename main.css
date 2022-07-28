@@ -25,23 +25,29 @@ body {
     width: 80px;
     height: 101px;
     margin: 20px;
-    margin-top: 112px;
+    margin-top: 160px;
     position: relative;
     transition: .25s;
 }
 
 .squish {
     background-size: 100% 70% !important;
+	width: 90px !important;
 }
 
 #button {
     height: 35px;
     width: 150px;
     border-radius: 20px;
-    margin: 18px;
-    margin-right:38px
+	margin: 18px 38px 0px 18px;
+}
+
+#count {
+	margin-right:20px;
+	margin-top:50px;
 }
 
 #button:hover {
     cursor: pointer;
 }
+
