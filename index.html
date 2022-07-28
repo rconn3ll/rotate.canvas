@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Rotate Canvas</title>
         <link rel="stylesheet" href="main.css">
         <script>
+			
+			var count = 0;
+		
             function rotate() {
               var seth = document.getElementById("canvas");
                 if (seth.classList.contains("squish")) {
                     seth.classList.remove("squish");
                 } else {
                     seth.classList.add("squish");
+					count ++;
+					document.getElementById("count").innerHTML = "Squish count: "+count;
                 }
             }
         </script>
     </head>
     <body>
-        <div id = "canvas"></div>
-        <div id = "button" onClick="rotate()"></div>
+        <div id="canvas" class=""></div>
+        <div id="button" onclick="rotate()"></div>
+		<div id="count">Squish count: 0</div>
     </body>
 </html>
