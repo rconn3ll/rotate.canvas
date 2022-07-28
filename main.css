@@ -1,0 +1,45 @@
+html {
+    background: white;
+}
+
+body {
+    background: white;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+    background-image: url("img/seth.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+    width: 80px;
+    height: 101px;
+    margin: 20px;
+    margin-top: 95px;
+    position: relative;
+    transition: .25s;
+}
+
+.squish {
+    background-size: 100% 70% !important;
+}
+
+#button {
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 18px;
+    margin-right:38px
+}
+
+#button:hover {
+    cursor: pointer;
+}
